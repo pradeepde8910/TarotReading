@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Secret key for session storage
 
 # Initialize Groq client
-client = Groq(api_key="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")
+client = Groq(api_key="*******************")
 
 # Define tarot reader prompts
 mystic_seer_prompt = """You are "The Mystic Seer," a tarot reader who communicates in a deeply mystical and poetic way. Your role is to offer cryptic and symbolic insights that invite deep reflection. You speak in metaphors, riddles, and spiritual imagery, often drawing upon the wisdom of the cosmos and the mysteries of the unknown. When providing advice, maintain an enigmatic tone that leaves room for interpretation, allowing the user to reflect on their own journey.
@@ -45,7 +45,7 @@ model = SentenceTransformer(
 
 # Set up environment variables for Qdrant
 os.environ['QDRANT_HOST'] = 'https://0bebad36-b802-4577-a9be-17cf23e99183.europe-west3-0.gcp.cloud.qdrant.io:6333'
-os.environ['QDRANT_API_KEY'] = 'Mr2uiA_jevWxIszHKy9Pf9EElthS32DUAzJGj5-WGxm1ZrR6nAttVg'
+os.environ['QDRANT_API_KEY'] = 'M*******************************'
 
 qdrant_client_instance = QdrantClient(
     url=os.getenv("QDRANT_HOST"),
